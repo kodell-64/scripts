@@ -25,7 +25,7 @@ def log( msg ):
 def usage():
     print("****************************************************************")
     print("**                                                            **")
-    print("** MarketTrack Regression Test Module - ",format( sys.argv[0] ))
+    print("** ********* Regression Test Module - ",format( sys.argv[0] ))
     print("**                                                            **")
     print("Usage: {}", sys.argv[0], " show_tests|run")
     print("**                                                            **")
@@ -36,7 +36,7 @@ def show_tests():
     keys=sorted( tests.keys() )
     print("****************************************************************")
     print("**                                                            **")
-    print("** MarketTrack Regression Test Module - ",format( sys.argv[0] ))
+    print("** ********* Regression Test Module - ",format( sys.argv[0] ))
     print("**                                                            **")
     print("** Available Tests - ")
     print("**                                                            **")

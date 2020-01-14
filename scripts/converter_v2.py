@@ -35,19 +35,19 @@ _DB_DATABASE = ""
 _DEV_DB_HOST = "localhost"
 _DEV_DB_USER = "converter"
 _DEV_DB_PASSWD = "********" # not fond of these creds here
-_DEV_DB_DATABASE = "converter_dev"
+_DEV_DB_DATABASE = "**********"
 _DEV_CONVERTER_DEST_PATH = "test"
 
 _LAB_DB_HOST = "localhost"
 _LAB_DB_USER = "converter"
 _LAB_DB_PASSWD = "*****" # not fond of these creds here
-_LAB_DB_DATABASE = "converter_lab"
+_LAB_DB_DATABASE = "*************"
 
 _PROD_DB_HOST = "localhost"
 _PROD_DB_USER = "converter"
 _PROD_DB_PASSWD = "**********" # not fond of these creds here
-_PROD_DB_DATABASE = "converter_prod"
-_PROD_CONVERTER_DEST_PATH = "/mnt/nj1-prdev-sv01/hscd96/transfer_da"
+_PROD_DB_DATABASE = "**************"
+_PROD_CONVERTER_DEST_PATH = "/mnt/path"
 
 _DEBUG=0
 _INFO=1
@@ -75,7 +75,7 @@ _STATES[_COMPLETE] = "COMPLETE"
 _FFMPEG = "/usr/bin/ffmpeg"
 _RSYNC = "/usr/bin/rsync"
 module="converter"
-run_pid_dir = "/var/run/DeepAd"
+run_pid_dir = "/var/run/******"
 log_dir = "logs"
 data_dir = "tmp"
 _MAX_WORKERS=1
@@ -243,9 +243,9 @@ while 1:
             n_second = "{:0>2}".format( 0 )
 
             time_span = "{}{}{}T{}{}{}Z..{}{}{}T{}{}{}Z".format(l_year, l_month, l_mday, l_hour, l_minute, l_second, n_year, n_month, n_mday, n_hour, n_minute, n_second)
-            string_temp = "https://entry.prod.mt.deep.ad/api/posts/?query=rating%3Asafe%20frozen-time%3ATIMESPAN%20&limit=3"
+            string_temp = "https://entry/api/posts/?query=rating%3Asafe%20frozen-time%3ATIMESPAN%20&limit=3"
             request_string = string_temp.replace('TIMESPAN', time_span)
-            log( "requesting range {}-{} => {} from DeepAd".format( adj_time-3600, adj_time, time_span ))
+            log( "requesting range {}-{} => {} from *****".format( adj_time-3600, adj_time, time_span ))
             log(request_string)
 
             try:
